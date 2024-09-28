@@ -1,3 +1,6 @@
 [submodule "scottokeebs"]
 	path = scottokeebs
 	url = https://github.com/joe-scotto/scottokeebs.git
+[submodule "pcb/scottokeebs"]
+	path = pcb/libraries/scottokeebs
+	url = https://github.com/joe-scotto/scottokeebs.git
