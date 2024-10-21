@@ -5,27 +5,30 @@
 	(uuid "7fdcf342-85e2-43bc-9100-2f09a765cb9f")
 	(paper "A4")
 	(lib_symbols
-		(symbol "PCM_marbastlib-mx:MX_SK6812MINI-E"
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "LED"
-				(at 3.175 6.35 0)
+			(property "Reference" "D"
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "MX_SK6812MINI-E"
-				(at 10.16 -6.985 0)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -34,7 +37,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -43,7 +46,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(property "Description" "Light emitting diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -52,7 +55,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "reverse mount led revmount rgb"
+			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
 					(font
@@ -61,31 +64,31 @@
 					(hide yes)
 				)
 			)
-			(symbol "MX_SK6812MINI-E_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
-			(symbol "MX_SK6812MINI-E_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
+						(xy -1.27 0) (xy 1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -97,7 +100,19 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -109,55 +124,7 @@
 				)
 				(polyline
 					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -168,11 +135,11 @@
 					)
 				)
 			)
-			(symbol "MX_SK6812MINI-E_1_1"
-				(pin power_in line
-					(at 0 7.62 270)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
 					(length 2.54)
-					(name "VDD"
+					(name "K"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -187,10 +154,10 @@
 						)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin passive line
+					(at 3.81 0 180)
 					(length 2.54)
-					(name "DOUT"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -198,42 +165,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1027,6 +958,126 @@
 				)
 			)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1347,28 +1398,10 @@
 		(uuid "145fb7cc-7884-4db5-8b3c-299e7d278302")
 	)
 	(junction
-		(at 195.58 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16c28b95-0c72-4f76-9803-9e654ff94e02")
-	)
-	(junction
-		(at 256.54 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "320344e9-0014-43ac-923a-573c28337264")
-	)
-	(junction
 		(at 59.69 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33cda091-611e-419d-b7b7-21fa8a185286")
-	)
-	(junction
-		(at 195.58 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "35362675-efcd-4152-9713-a2624d36c0b2")
 	)
 	(junction
 		(at 64.77 130.81)
@@ -1381,12 +1414,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3645c6b2-6993-4a72-9227-a64f8519df40")
-	)
-	(junction
-		(at 195.58 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d3896b1-315e-4914-87eb-11b521ab2a5f")
 	)
 	(junction
 		(at 31.75 97.79)
@@ -1419,22 +1446,10 @@
 		(uuid "60b2590f-19b1-47ae-b657-eee0a2c4e7a1")
 	)
 	(junction
-		(at 226.06 44.45)
+		(at 233.68 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6dba151a-b426-4180-824c-bda9c12082ef")
-	)
-	(junction
-		(at 256.54 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f0eb854-e024-469b-88cf-a7385b6291d7")
-	)
-	(junction
-		(at 195.58 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f17988b-04d7-43e8-a1f8-8bbd2011ade2")
+		(uuid "6dcc7f67-0a92-4e5e-8910-0f881b584c16")
 	)
 	(junction
 		(at 31.75 77.47)
@@ -1479,24 +1494,6 @@
 		(uuid "938e2ef7-29d2-4c11-bb6b-61cdca779ddd")
 	)
 	(junction
-		(at 226.06 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94bb28d1-33c2-4e05-b9b4-36d1e1edd982")
-	)
-	(junction
-		(at 195.58 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94cb998d-ad0e-4914-a9a5-45fd8e2fad97")
-	)
-	(junction
-		(at 256.54 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "99bb334a-70dc-41d9-9d8e-c090f514119e")
-	)
-	(junction
 		(at 78.74 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1509,22 +1506,10 @@
 		(uuid "a7c18c5d-f179-43d2-94d6-523501b8aaee")
 	)
 	(junction
-		(at 226.06 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a86a9617-678b-45ad-b69d-8bfddd0a2cf3")
-	)
-	(junction
 		(at 73.66 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8c11261-6bfd-4858-94dc-fb275c55e3e4")
-	)
-	(junction
-		(at 226.06 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bb09a674-eab4-44e2-853b-d3dd04f29a4d")
 	)
 	(junction
 		(at 78.74 110.49)
@@ -1539,46 +1524,10 @@
 		(uuid "c1a9e21d-4af0-4ed1-a145-187691b62f4c")
 	)
 	(junction
-		(at 195.58 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5149c21-91cd-4e26-8a3c-3922ba4d546d")
-	)
-	(junction
-		(at 226.06 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9e21a68-9e01-4211-9b98-4792eda40527")
-	)
-	(junction
 		(at 59.69 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb8bfca4-1851-45ff-ade5-6e653961651b")
-	)
-	(junction
-		(at 256.54 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d04c3a6e-835b-49c0-aa10-d78791e84d07")
-	)
-	(junction
-		(at 195.58 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d131cf67-5022-4861-baa7-9a58301ead04")
-	)
-	(junction
-		(at 226.06 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de962416-1026-42d9-a4b0-f018c53e6bd4")
-	)
-	(junction
-		(at 226.06 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "def40590-d708-4e49-87bc-76aa3ab42cde")
 	)
 	(junction
 		(at 78.74 130.81)
@@ -1587,40 +1536,10 @@
 		(uuid "e06221c9-aac8-4592-b7e3-b014f474252f")
 	)
 	(junction
-		(at 256.54 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e473bbe7-8f2f-491e-aec7-575a9ae43072")
-	)
-	(junction
-		(at 195.58 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e6dfed3e-dfe3-47c2-b951-29fdba7b71b5")
-	)
-	(junction
-		(at 256.54 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ee0d5e91-7847-4d36-855c-4aa25fb302fb")
-	)
-	(junction
 		(at 45.72 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ee4672b6-dd41-47a2-8812-40df24b7c276")
-	)
-	(junction
-		(at 226.06 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f686622f-d6ea-4965-b70d-7fb9a2fa87be")
-	)
-	(junction
-		(at 256.54 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f8a86ce7-6530-495f-ba2d-e3613c64e831")
 	)
 	(junction
 		(at 50.8 69.85)
@@ -1628,31 +1547,15 @@
 		(color 0 0 0 0)
 		(uuid "fce8da6a-b43b-4c7f-a695-c9ea2f4449b9")
 	)
-	(junction
-		(at 256.54 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe9d46ab-b842-4062-83ec-f6c81e3e7d3e")
-	)
 	(wire
 		(pts
-			(xy 226.06 44.45) (xy 256.54 44.45)
+			(xy 233.68 121.92) (xy 228.6 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "052ac9c9-0383-429f-a5e3-15efba35cf69")
-	)
-	(wire
-		(pts
-			(xy 195.58 44.45) (xy 226.06 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "070a5f43-4aad-4328-92c0-9701271798f3")
+		(uuid "03d57786-c58c-4eb9-a6cc-e9473057cfc8")
 	)
 	(wire
 		(pts
@@ -1706,26 +1609,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 29.21) (xy 187.96 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a3b94ad-e35e-4b86-829e-94d0c233344c")
-	)
-	(wire
-		(pts
-			(xy 165.1 82.55) (xy 195.58 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d05ee25-cdb1-49d8-9b1e-4351d008e4e5")
-	)
-	(wire
-		(pts
 			(xy 195.58 147.32) (xy 198.12 147.32)
 		)
 		(stroke
@@ -1746,36 +1629,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 29.21) (xy 248.92 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20a70b47-2e57-4c14-9649-b72cafea28df")
-	)
-	(wire
-		(pts
-			(xy 226.06 21.59) (xy 256.54 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26789f05-96f4-494b-b788-bacc6e2207fa")
-	)
-	(wire
-		(pts
-			(xy 165.1 59.69) (xy 195.58 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2852f2cb-4e22-4c6a-93ae-16926e4f60aa")
-	)
-	(wire
-		(pts
 			(xy 64.77 90.17) (xy 78.74 90.17)
 		)
 		(stroke
@@ -1793,36 +1646,6 @@
 			(type default)
 		)
 		(uuid "2efdfe38-e842-4344-bda8-3ef05eb808a9")
-	)
-	(wire
-		(pts
-			(xy 195.58 59.69) (xy 226.06 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31bd3571-c449-400f-82c3-e70c8bd0426f")
-	)
-	(wire
-		(pts
-			(xy 203.2 52.07) (xy 218.44 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "351675ff-3002-4247-ae40-51a755045b62")
-	)
-	(wire
-		(pts
-			(xy 172.72 52.07) (xy 187.96 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b843bd8-f3ff-4594-8dc6-02112c850cc4")
 	)
 	(wire
 		(pts
@@ -1856,16 +1679,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 21.59) (xy 195.58 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4576ff7d-b5e2-477e-bde4-3910831c9694")
-	)
-	(wire
-		(pts
 			(xy 45.72 77.47) (xy 45.72 97.79)
 		)
 		(stroke
@@ -1873,36 +1686,6 @@
 			(type default)
 		)
 		(uuid "46700178-7d08-403b-96ca-9bffff898813")
-	)
-	(wire
-		(pts
-			(xy 203.2 74.93) (xy 218.44 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48745f89-17ad-444d-a502-0bac073cfedf")
-	)
-	(wire
-		(pts
-			(xy 233.68 52.07) (xy 248.92 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4c318bd5-7986-4952-a96e-470fd0d92cbf")
-	)
-	(wire
-		(pts
-			(xy 271.78 82.55) (xy 256.54 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4dd20f49-0b07-4d13-9abc-6de6d5887edc")
 	)
 	(wire
 		(pts
@@ -1926,16 +1709,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 105.41) (xy 226.06 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5877fd58-f765-4437-88e0-292079630b73")
-	)
-	(wire
-		(pts
 			(xy 50.8 130.81) (xy 64.77 130.81)
 		)
 		(stroke
@@ -1943,16 +1716,6 @@
 			(type default)
 		)
 		(uuid "5b1ecde6-3a4a-4f5a-9fa2-25b7d6ed6bca")
-	)
-	(wire
-		(pts
-			(xy 226.06 36.83) (xy 256.54 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f157c25-e371-47df-a917-7525e24d3e10")
 	)
 	(wire
 		(pts
@@ -1973,46 +1736,6 @@
 			(type default)
 		)
 		(uuid "679f770b-6aff-4a90-8a3c-938291b5b5f4")
-	)
-	(wire
-		(pts
-			(xy 271.78 59.69) (xy 256.54 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a85f621-5018-487d-b841-bdb6399638f8")
-	)
-	(wire
-		(pts
-			(xy 195.58 36.83) (xy 226.06 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d5dca48-0c7d-4462-b6bd-ef63f654fa08")
-	)
-	(wire
-		(pts
-			(xy 226.06 82.55) (xy 256.54 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d9490c0-ee35-44cb-bdda-d1a1f252ae55")
-	)
-	(wire
-		(pts
-			(xy 165.1 105.41) (xy 195.58 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ecdc020-fe1f-4be6-b7c6-6e9075c647b1")
 	)
 	(wire
 		(pts
@@ -2066,16 +1789,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 29.21) (xy 218.44 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c352174-b69f-4a74-bf92-e3c8af947748")
-	)
-	(wire
-		(pts
 			(xy 64.77 110.49) (xy 78.74 110.49)
 		)
 		(stroke
@@ -2086,26 +1799,6 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 74.93) (xy 248.92 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a049b341-20f5-4951-a3c7-cf254092d3b1")
-	)
-	(wire
-		(pts
-			(xy 203.2 97.79) (xy 218.44 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a10eea94-6ad8-419c-beb7-fbe177efff03")
-	)
-	(wire
-		(pts
 			(xy 59.69 57.15) (xy 59.69 77.47)
 		)
 		(stroke
@@ -2113,26 +1806,6 @@
 			(type default)
 		)
 		(uuid "a1ff4549-5d36-4ae7-83ef-0797e0d0107f")
-	)
-	(wire
-		(pts
-			(xy 226.06 105.41) (xy 256.54 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a440ed94-c7be-49e6-926e-fd82d8ee6736")
-	)
-	(wire
-		(pts
-			(xy 165.1 67.31) (xy 195.58 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a514ec74-f0d1-40af-bc9b-a724d81bf3c2")
 	)
 	(wire
 		(pts
@@ -2153,26 +1826,6 @@
 			(type default)
 		)
 		(uuid "b12868c5-860c-4350-b89c-a1437d61024b")
-	)
-	(wire
-		(pts
-			(xy 271.78 105.41) (xy 256.54 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b14b6c07-9187-44bf-ba7f-a5c997bf6c8f")
-	)
-	(wire
-		(pts
-			(xy 165.1 44.45) (xy 195.58 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1c2b32c-f828-4537-91f1-a3776b465245")
 	)
 	(wire
 		(pts
@@ -2226,96 +1879,6 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 67.31) (xy 226.06 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cab2b852-f02f-42b2-b233-6eea5829b1b6")
-	)
-	(wire
-		(pts
-			(xy 195.58 21.59) (xy 226.06 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce2a96d2-91db-4af7-bfc6-55984532139f")
-	)
-	(wire
-		(pts
-			(xy 226.06 67.31) (xy 256.54 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d14944e4-f022-4a46-91e6-8b8019a34918")
-	)
-	(wire
-		(pts
-			(xy 226.06 59.69) (xy 256.54 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8fbb306-bdde-451c-bb2f-4c2388401009")
-	)
-	(wire
-		(pts
-			(xy 195.58 82.55) (xy 226.06 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dafc70e0-971f-40b9-8363-4a32256fc7ab")
-	)
-	(wire
-		(pts
-			(xy 172.72 97.79) (xy 187.96 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc81a7b3-7783-4562-832a-3d993510a660")
-	)
-	(wire
-		(pts
-			(xy 233.68 97.79) (xy 248.92 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e20d27a7-d468-442a-a7c0-e753952f877d")
-	)
-	(wire
-		(pts
-			(xy 271.78 36.83) (xy 256.54 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e211c7e9-d86c-4f5f-91af-2f66bc327f02")
-	)
-	(wire
-		(pts
-			(xy 165.1 36.83) (xy 195.58 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e226110c-7d62-49ee-bf29-9092932d08f0")
-	)
-	(wire
-		(pts
 			(xy 78.74 110.49) (xy 87.63 110.49)
 		)
 		(stroke
@@ -2363,46 +1926,6 @@
 			(type default)
 		)
 		(uuid "f3e4a951-ecae-4fce-bd21-e1d730ac9306")
-	)
-	(wire
-		(pts
-			(xy 172.72 74.93) (xy 187.96 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f46eae65-f112-410e-821b-2c491cead6a7")
-	)
-	(wire
-		(pts
-			(xy 226.06 90.17) (xy 256.54 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f56c2737-d4ea-4d5b-9aa9-d5c25652784f")
-	)
-	(wire
-		(pts
-			(xy 165.1 90.17) (xy 195.58 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f78a88be-a21a-4abd-87b8-ee02b5872491")
-	)
-	(wire
-		(pts
-			(xy 195.58 90.17) (xy 226.06 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb4efe49-34b0-4dc3-a0d8-b3f15e35e4c0")
 	)
 	(global_label "Column 0"
 		(shape input)
@@ -2756,30 +2279,6 @@
 			)
 		)
 	)
-	(hierarchical_label "LED Connector 3"
-		(shape input)
-		(at 264.16 74.93 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1542125f-50a4-4bf5-85e4-16a7ef5251dd")
-	)
-	(hierarchical_label "LED Connector 2"
-		(shape input)
-		(at 264.16 52.07 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1e5a8fd2-b50e-4783-a2aa-b08b7dad80a3")
-	)
 	(hierarchical_label "SCL"
 		(shape input)
 		(at 198.12 144.78 180)
@@ -2792,54 +2291,6 @@
 		)
 		(uuid "8190068b-d83a-4b2e-bb0f-102b2d58387d")
 	)
-	(hierarchical_label "LED Connector 3"
-		(shape input)
-		(at 157.48 97.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8235c82f-1023-4ef1-88c7-f2dfc11c7d1a")
-	)
-	(hierarchical_label "LED Connector 0"
-		(shape input)
-		(at 157.48 29.21 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ae847b0f-0e3f-4157-a21f-421a69874c87")
-	)
-	(hierarchical_label "LED Connector 1"
-		(shape input)
-		(at 264.16 29.21 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bda99291-c67c-4b22-bd24-486518fb777c")
-	)
-	(hierarchical_label "LED Connector 0"
-		(shape input)
-		(at 187.96 132.08 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "be609203-1cc9-48f5-b2e9-0ee2b3f77330")
-	)
 	(hierarchical_label "SDA"
 		(shape input)
 		(at 187.96 127 180)
@@ -2851,30 +2302,6 @@
 			(justify right)
 		)
 		(uuid "ca1d32f6-3928-46df-b84a-9d30e7a06201")
-	)
-	(hierarchical_label "LED Connector 2"
-		(shape input)
-		(at 157.48 74.93 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d78729c1-10fe-42d1-9aab-e33db6f7ea85")
-	)
-	(hierarchical_label "LED Connector 1"
-		(shape input)
-		(at 157.48 52.07 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dbf5ce1d-c084-4c70-a9b8-05280170bbcd")
 	)
 	(hierarchical_label "SCL"
 		(shape input)
@@ -2899,6 +2326,73 @@
 			(justify right)
 		)
 		(uuid "fe6062d8-9273-40b3-8b4e-c7e314fc9171")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 212.09 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0004ea36-dcd3-4da7-a2ce-e995df2b52a8")
+		(property "Reference" "#PWR033"
+			(at 218.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4988adab-e872-4b7d-b463-17778f029efd")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
@@ -3145,6 +2639,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 232.41 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09c28b3b-e12b-45d0-a26a-156546e99c1a")
+		(property "Reference" "#PWR010"
+			(at 236.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 228.6 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 232.41 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36572c17-5cd6-4e83-8c0e-f579fc13ced5")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
 		(at 78.74 106.68 90)
 		(unit 1)
@@ -3233,6 +2794,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 233.68 121.92 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c1cb45f-9cc2-4242-9ca4-f0c6747d18c5")
+		(property "Reference" "#PWR05"
+			(at 229.87 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 237.49 121.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 233.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 233.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 233.68 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5d1bcd0-7317-4a14-bc1a-99d8a09509c7")
+		)
+		(instances
+			(project ""
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 48.26 80.01 0)
 		(unit 1)
@@ -3301,16 +2929,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 256.54 67.31 0)
+		(lib_id "Device:LED")
+		(at 181.61 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "1617e8c7-967c-4920-afc0-3464d0524d4b")
-		(property "Reference" "#PWR07"
-			(at 256.54 71.12 0)
+		(fields_autoplaced yes)
+		(uuid "13a5940d-7068-43d4-b521-bf6b5c0b62aa")
+		(property "Reference" "D21"
+			(at 183.1975 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 183.1975 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 181.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3318,16 +2963,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 256.54 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 256.54 67.31 0)
+		(property "Datasheet" "~"
+			(at 181.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3335,17 +2972,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 256.54 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 256.54 67.31 0)
+		(property "Description" "Light emitting diode"
+			(at 181.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3354,7 +2982,77 @@
 			)
 		)
 		(pin "1"
-			(uuid "3a904e5a-15d5-4009-98a7-44cf0024f09d")
+			(uuid "b0f6282e-f95f-4b11-8187-f84754e17ae0")
+		)
+		(pin "2"
+			(uuid "bb3cc763-3770-4dc5-81eb-3c4b4ba51f5c")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "184c5ef2-0734-4372-9417-c149c6dc9f7b")
+		(property "Reference" "#PWR07"
+			(at 191.77 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85733fa1-baf4-4b86-9d5d-25bf26548da7")
 		)
 		(instances
 			(project ""
@@ -3366,33 +3064,35 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 195.58 74.93 0)
+		(lib_id "power:+3V3")
+		(at 177.8 38.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1d9f4a1e-df66-4bec-8fc3-24d190678a2e")
-		(property "Reference" "LED10"
-			(at 210.82 68.6114 0)
+		(uuid "18cc326d-0c65-463d-9c07-63d1ac98f872")
+		(property "Reference" "#PWR06"
+			(at 181.61 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 210.82 71.1514 0)
+		(property "Value" "+3V3"
+			(at 173.99 38.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 195.58 74.93 0)
+		(property "Footprint" ""
+			(at 177.8 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3401,7 +3101,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 74.93 0)
+			(at 177.8 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3409,8 +3109,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 195.58 74.93 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 177.8 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3419,21 +3119,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7083130c-92be-4e4f-9bee-ae89d0125d3a")
-		)
-		(pin "2"
-			(uuid "2c0dbe2c-ccf6-472b-a5b6-f15b3a0fa1b4")
-		)
-		(pin "4"
-			(uuid "a5936e0f-8928-4931-965d-54a340f64d3f")
-		)
-		(pin "3"
-			(uuid "b3ed796a-c4f2-47c7-b8a9-04f935581cdb")
+			(uuid "0a79a5d0-f5ae-463a-9685-29ee11cb6158")
 		)
 		(instances
-			(project "hackpad-pcb"
+			(project ""
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED10")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3502,80 +3193,6 @@
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
 					(reference "S15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 256.54 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "20ca8199-22d8-4d04-8ed3-f7d257e8940d")
-		(property "Reference" "LED12"
-			(at 271.78 68.6114 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 271.78 71.1514 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 256.54 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 256.54 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b5027835-f565-4808-8b12-44c873dbe881")
-		)
-		(pin "2"
-			(uuid "e4db0e29-6c34-4569-89fe-e4e9d718763f")
-		)
-		(pin "4"
-			(uuid "ff9f1ead-63ec-470c-a059-5daaec5d00ec")
-		)
-		(pin "3"
-			(uuid "c379804e-346c-4737-a9cb-44abaa0be42f")
-		)
-		(instances
-			(project "hackpad-pcb"
-				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED12")
 					(unit 1)
 				)
 			)
@@ -3737,17 +3354,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 271.78 105.41 0)
+		(lib_id "Device:LED")
+		(at 264.16 63.5 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "296a6f61-e1be-4ead-a5da-19f3c8d52988")
-		(property "Reference" "#PWR012"
-			(at 271.78 111.76 0)
+		(uuid "2a23e7d5-45bf-4b15-b534-d20f94ae0f09")
+		(property "Reference" "D28"
+			(at 265.7475 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 265.7475 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 264.16 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3755,16 +3388,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 271.78 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 271.78 105.41 0)
+		(property "Datasheet" "~"
+			(at 264.16 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3772,17 +3397,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 271.78 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 105.41 0)
+		(property "Description" "Light emitting diode"
+			(at 264.16 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3791,12 +3407,83 @@
 			)
 		)
 		(pin "1"
-			(uuid "eb3a1a55-51bc-440b-a792-24439327281a")
+			(uuid "15498030-f707-4929-be11-2ee6107288ce")
+		)
+		(pin "2"
+			(uuid "022ebe29-4a16-4420-9799-3708c6b59b7c")
 		)
 		(instances
-			(project ""
+			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "#PWR012")
+					(reference "D28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 236.22 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2afff5dd-c052-4f03-821f-76885479cb8e")
+		(property "Reference" "D19"
+			(at 237.8075 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 237.8075 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 236.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 236.22 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "56fac015-9e2a-4b5c-983a-94d777e9fb69")
+		)
+		(pin "2"
+			(uuid "ca60329b-d47b-4b12-9e52-db16e8f69b06")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D19")
 					(unit 1)
 				)
 			)
@@ -3933,6 +3620,140 @@
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
 					(reference "S7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 267.97 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2c9f58e0-59a2-4627-a57e-003b83be0037")
+		(property "Reference" "#PWR013"
+			(at 274.32 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 271.78 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 267.97 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1aa5b8f1-b3cf-466f-a643-a022fc9916a9")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e69dc9e-fe11-43f3-9e26-5d6698928898")
+		(property "Reference" "#PWR011"
+			(at 246.38 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "583b8550-8cc4-47db-90d7-28b2d491a287")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -4163,42 +3984,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 165.1 97.79 0)
+		(lib_id "Device:LED")
+		(at 264.16 38.1 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3bb58f73-c4b3-484c-af2b-c023a322e0ce")
-		(property "Reference" "LED13"
-			(at 180.34 91.4714 0)
+		(uuid "386796e4-c977-417a-8aa8-0894431675cc")
+		(property "Reference" "D20"
+			(at 265.7475 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 180.34 94.0114 0)
+		(property "Value" "LED"
+			(at 265.7475 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 165.1 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 97.79 0)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 264.16 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4206,8 +4018,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 165.1 97.79 0)
+		(property "Datasheet" "~"
+			(at 264.16 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 264.16 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4216,21 +4037,216 @@
 			)
 		)
 		(pin "1"
-			(uuid "6cebc3cd-9480-401e-a625-a26b51ea4280")
+			(uuid "dea43d2a-9761-4917-bb49-7890161f8dfa")
 		)
 		(pin "2"
-			(uuid "1ed5e010-ff94-4776-bf24-d3c411c288c4")
-		)
-		(pin "4"
-			(uuid "3ec8d6f6-9064-4c53-8f05-59dfa719b6fb")
-		)
-		(pin "3"
-			(uuid "42861a7b-e9dd-45d0-bc4b-b9bf2bb396ca")
+			(uuid "d65452c9-d43c-4788-b828-06ff3d28daa7")
 		)
 		(instances
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED13")
+					(reference "D20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 204.47 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3db1f3f3-f716-40d2-a87b-892067fbf103")
+		(property "Reference" "#PWR016"
+			(at 208.28 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 200.66 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 204.47 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95b9b750-b172-4f79-9845-192b460c9591")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "414fe642-d002-47d8-9c96-d859625e00dd")
+		(property "Reference" "#PWR027"
+			(at 246.38 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9176deb2-2a99-4c77-9e1a-7994dfd4e840")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 212.09 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42bf89ea-b676-4973-8209-68921fb08060")
+		(property "Reference" "#PWR025"
+			(at 218.44 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "499035e9-d222-4cff-ba92-1abf10f92c6c")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -4325,41 +4341,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 165.1 29.21 0)
+		(lib_id "Device:LED")
+		(at 208.28 76.2 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "461c9f6f-361a-43cf-8046-30305bd605f8")
-		(property "Reference" "LED1"
-			(at 180.34 22.8914 0)
+		(fields_autoplaced yes)
+		(uuid "4637dc54-28d7-403c-965c-f2471e3404cd")
+		(property "Reference" "D30"
+			(at 209.8675 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 180.34 25.4314 0)
+		(property "Value" "LED"
+			(at 209.8675 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 165.1 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 29.21 0)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 208.28 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,8 +4375,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 165.1 29.21 0)
+		(property "Datasheet" "~"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 208.28 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4377,94 +4394,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "aaaa0783-a828-48a4-8dec-379e127418e4")
+			(uuid "a33a5c8a-7b74-4949-955b-4c97ff8ac6d9")
 		)
 		(pin "2"
-			(uuid "d9a2c5ab-a7d3-4b6f-8c3b-e137ee9a6f5d")
-		)
-		(pin "4"
-			(uuid "2bccc8d7-ebbf-4379-bad3-2da10525d164")
-		)
-		(pin "3"
-			(uuid "9ee0079d-68f6-44f2-8aa7-3ef5b2dd3b36")
-		)
-		(instances
-			(project ""
-				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 256.54 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "47e0baaf-6f23-4308-be51-82181d06baf9")
-		(property "Reference" "LED4"
-			(at 271.78 22.8914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 271.78 25.4314 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 256.54 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 256.54 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "18d14dbb-22a9-465e-9062-4f6195687f7b")
-		)
-		(pin "2"
-			(uuid "205f151e-256b-4d75-b536-2c957bee04f5")
-		)
-		(pin "4"
-			(uuid "f9602b58-9628-4d1f-813e-2fa82a092e08")
-		)
-		(pin "3"
-			(uuid "a98f97f1-5295-40af-a58d-08d91bc8fbc8")
+			(uuid "cfbc6fd1-542e-4163-a06c-5032da4886b1")
 		)
 		(instances
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED4")
+					(reference "D30")
 					(unit 1)
 				)
 			)
@@ -4559,6 +4497,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 185.42 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50d1bf8c-4eb1-4443-8e1d-ab743b387309")
+		(property "Reference" "#PWR023"
+			(at 191.77 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "020bb89c-7145-4f4a-b474-8017ed3c8f6d")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
 		(at 64.77 106.68 90)
 		(unit 1)
@@ -4647,33 +4652,35 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 195.58 97.79 0)
+		(lib_id "power:+3V3")
+		(at 232.41 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "563193b2-ec94-4bc7-bce9-b8dadbd4aff0")
-		(property "Reference" "LED14"
-			(at 210.82 91.4714 0)
+		(uuid "5900f17d-fb08-40bf-adac-8c9c601dbf20")
+		(property "Reference" "#PWR018"
+			(at 236.22 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 210.82 94.0114 0)
+		(property "Value" "+3V3"
+			(at 228.6 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 195.58 97.79 0)
+		(property "Footprint" ""
+			(at 232.41 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4682,7 +4689,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 97.79 0)
+			(at 232.41 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4690,8 +4697,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 195.58 97.79 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 232.41 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4700,38 +4707,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca516064-b259-4a9e-8b0a-a18af390cdb5")
-		)
-		(pin "2"
-			(uuid "f8106bc4-e9f6-4c8e-ad95-bb353cafad1e")
-		)
-		(pin "4"
-			(uuid "c06cc728-d23d-4d13-9280-1dd2ec403ad0")
-		)
-		(pin "3"
-			(uuid "776349bf-cbc9-44b4-999b-314830fed261")
+			(uuid "c9a2627b-1e01-41f0-91fb-a7057c1d29cf")
 		)
 		(instances
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED14")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 256.54 90.17 0)
+		(lib_id "power:+3V3")
+		(at 177.8 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5ba21d20-cc2a-4a4b-befe-cb557a0f82fc")
-		(property "Reference" "#PWR08"
-			(at 256.54 93.98 0)
+		(uuid "59d975b2-0469-427d-96ec-9cf2cdf7e20b")
+		(property "Reference" "#PWR014"
+			(at 181.61 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4739,16 +4737,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 256.54 85.09 0)
+		(property "Value" "+3V3"
+			(at 173.99 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 90.17 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4757,7 +4756,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 90.17 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4765,8 +4764,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 256.54 90.17 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4775,12 +4774,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b0177767-6a6c-4dfc-be3a-0047dc34d07e")
+			(uuid "c98c2cd4-a86d-4f4c-8597-0f46adfea960")
 		)
 		(instances
-			(project ""
+			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "#PWR08")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -4788,16 +4787,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 271.78 36.83 0)
+		(at 267.97 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5ffdb552-670c-452e-971f-5560a52cfa77")
-		(property "Reference" "#PWR09"
-			(at 271.78 43.18 0)
+		(uuid "5e0b7c35-9997-45ee-95f9-fe93760e3fe1")
+		(property "Reference" "#PWR037"
+			(at 274.32 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4806,15 +4805,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 271.78 41.91 0)
+			(at 271.78 76.1999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 36.83 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4823,7 +4823,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 36.83 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4832,7 +4832,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 36.83 0)
+			(at 267.97 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4841,12 +4841,79 @@
 			)
 		)
 		(pin "1"
-			(uuid "39921416-d5f0-421f-ab63-2cd195fea721")
+			(uuid "fc87e691-d9de-4b14-84e2-03a3a2bcd9e3")
 		)
 		(instances
-			(project ""
+			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "#PWR09")
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63620a99-919e-434a-9063-a04118692896")
+		(property "Reference" "#PWR019"
+			(at 246.38 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8c0bcef-42d9-4c6c-9629-14d328a5d5b4")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -4914,6 +4981,141 @@
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
 					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 181.61 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f54c67b-2d55-4105-b304-9379c2db6fc5")
+		(property "Reference" "D25"
+			(at 183.1975 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 183.1975 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c06f86e1-93fd-4647-a1e5-02c33e8747db")
+		)
+		(pin "2"
+			(uuid "a4775eb0-b895-4491-a6f0-b3062300cb87")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 260.35 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "703b84ec-8169-4e19-8891-cdd29bb8546b")
+		(property "Reference" "#PWR036"
+			(at 264.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 256.54 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 260.35 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "64ebdc8c-1cd3-4db3-a99d-c568d5c55e8e")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -5008,6 +5210,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 264.16 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79676dd4-7fbb-4cee-8ffb-442a5b51299e")
+		(property "Reference" "D32"
+			(at 265.7475 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 265.7475 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 264.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 264.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 264.16 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97df1c54-05d3-4eac-9f6f-2b101ce0a05c")
+		)
+		(pin "2"
+			(uuid "c7787bd6-bafa-406c-b2f7-e0690b78816d")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 48.26 100.33 0)
 		(unit 1)
@@ -5076,17 +5346,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 256.54 44.45 0)
+		(lib_id "power:PWR_FLAG")
+		(at 233.68 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7c32dd02-ffb2-4eaf-988f-311f83f42706")
-		(property "Reference" "#PWR06"
-			(at 256.54 48.26 0)
+		(uuid "7cc752a5-6ce6-46fc-b1be-ea47a1251dce")
+		(property "Reference" "#FLG02"
+			(at 233.68 120.015 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5094,8 +5364,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 256.54 39.37 0)
+		(property "Value" "PWR_FLAG"
+			(at 233.68 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5103,7 +5373,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 44.45 0)
+			(at 233.68 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5111,8 +5381,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 256.54 44.45 0)
+		(property "Datasheet" "~"
+			(at 233.68 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5120,8 +5390,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 256.54 44.45 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 233.68 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5130,12 +5400,147 @@
 			)
 		)
 		(pin "1"
-			(uuid "43f4d07e-68d5-4135-a2ab-862431a15ba8")
+			(uuid "5acae004-cfcc-4a62-9103-46105bc3c747")
 		)
 		(instances
 			(project ""
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "#PWR06")
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 208.28 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80d4e48f-d9ec-4077-992d-9e7747434ff8")
+		(property "Reference" "D26"
+			(at 209.8675 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 209.8675 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 208.28 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 208.28 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b6af35d-316c-4ebc-b9d1-de4cd593f1bf")
+		)
+		(pin "2"
+			(uuid "e43fb8dd-9663-4b35-b4a2-1f51b8d9773f")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 260.35 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "858880de-fa57-4c53-b11a-31289543a6c0")
+		(property "Reference" "#PWR012"
+			(at 264.16 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 256.54 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 260.35 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50a6b181-c22e-49b1-be23-b8c0bcbc859c")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -5544,6 +5949,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 181.61 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "969a85e5-b7bd-45c2-b1c1-40762a7e8b65")
+		(property "Reference" "D17"
+			(at 183.1975 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 183.1975 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 181.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "415ee4c3-6042-4417-b903-1ecfb7034b49")
+		)
+		(pin "2"
+			(uuid "e6f3116e-7087-4106-be2a-bc34d2549231")
+		)
+		(instances
+			(project ""
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
 		(at 36.83 106.68 90)
 		(unit 1)
@@ -5699,33 +6172,35 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 256.54 97.79 0)
+		(lib_id "power:GND")
+		(at 267.97 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9f255714-7ae0-4624-96d8-d327b2dc73de")
-		(property "Reference" "LED16"
-			(at 271.78 91.4714 0)
+		(uuid "9877804f-2ecf-413c-b650-78a06f0ebd7c")
+		(property "Reference" "#PWR021"
+			(at 274.32 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 271.78 94.0114 0)
+		(property "Value" "GND"
+			(at 271.78 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 256.54 97.79 0)
+		(property "Footprint" ""
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5734,7 +6209,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 97.79 0)
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5742,81 +6217,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 256.54 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6a813810-2009-4530-b213-9d46d9412f87")
-		)
-		(pin "2"
-			(uuid "111bb398-1224-477b-8fe4-a256764a9357")
-		)
-		(pin "4"
-			(uuid "b0e2ca39-3eed-494d-a4b0-61f9771f2c9a")
-		)
-		(pin "3"
-			(uuid "05dd0e9e-eb69-42cf-b9a1-50a6b9323435")
-		)
-		(instances
-			(project "hackpad-pcb"
-				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 226.06 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a355ea2d-bcdd-4868-8d9f-5ca54b7e2fd8")
-		(property "Reference" "LED3"
-			(at 241.3 22.8914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 241.3 25.4314 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 226.06 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 226.06 29.21 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 267.97 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5825,63 +6227,45 @@
 			)
 		)
 		(pin "1"
-			(uuid "c909f4d5-98fe-4ab7-83b0-46cf5a66632b")
-		)
-		(pin "2"
-			(uuid "622bf38a-02ab-4fb9-a2b8-3425236df3cf")
-		)
-		(pin "4"
-			(uuid "ee2ad32d-8c42-4d1c-9924-665256e9fc38")
-		)
-		(pin "3"
-			(uuid "4433ec31-3324-4b38-a135-d2e3a998619e")
+			(uuid "e9ba54f1-dcf9-4749-8142-80bea0270f56")
 		)
 		(instances
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED3")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 195.58 52.07 0)
+		(lib_id "Device:LED")
+		(at 264.16 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ac4d8af9-db6b-43ec-b949-5c0a8b798628")
-		(property "Reference" "LED6"
-			(at 210.82 45.7514 0)
+		(uuid "99866ef1-5d13-4208-98d2-e458b13be5d9")
+		(property "Reference" "D24"
+			(at 265.7475 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 210.82 48.2914 0)
+		(property "Value" "LED"
+			(at 265.7475 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 195.58 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 195.58 52.07 0)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 264.16 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5889,8 +6273,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 195.58 52.07 0)
+		(property "Datasheet" "~"
+			(at 264.16 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 264.16 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5899,21 +6292,217 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb97c82c-b657-406c-bb8e-b2f0b3e391e6")
+			(uuid "bb6c206a-525b-4e7c-b9c4-a7f5b7c2a48a")
 		)
 		(pin "2"
-			(uuid "238f2e09-6231-4712-a254-8ff70b47d3f7")
-		)
-		(pin "4"
-			(uuid "843c08eb-31a6-45fb-b9a1-1616f30ed40d")
-		)
-		(pin "3"
-			(uuid "ea1470ec-22bf-42ac-8cba-e988b30dc230")
+			(uuid "ebc7cf60-f249-4dd0-a304-820e5d9b50d7")
 		)
 		(instances
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED6")
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 232.41 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b693617-3c52-4e66-b37e-bb4281d7f2eb")
+		(property "Reference" "#PWR034"
+			(at 236.22 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 228.6 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 232.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "edaed23c-fba2-410f-bc8f-9d01f5207fb7")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 236.22 63.5 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a53adee3-9a71-4c0f-987c-a499372a432f")
+		(property "Reference" "D27"
+			(at 237.8075 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 237.8075 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 236.22 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 236.22 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "060efe04-9247-4103-aba4-566c13a1eba2")
+		)
+		(pin "2"
+			(uuid "21f21f86-12e6-40ed-acf0-d34a913bba28")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 204.47 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa2a77ce-245c-4d3e-8950-08ad8cbed31a")
+		(property "Reference" "#PWR032"
+			(at 208.28 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 200.66 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 204.47 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2040066c-2db2-486d-bae7-9b64713add83")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -5988,6 +6577,208 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 208.28 38.1 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af51e16b-35fc-4d6c-a245-8284effcba95")
+		(property "Reference" "D18"
+			(at 209.8675 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 209.8675 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 208.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 208.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d8ec26fc-4f6e-4b4c-a2bb-4e37489bcb6d")
+		)
+		(pin "2"
+			(uuid "a9740c94-f1ec-4614-822d-b60bba0b6fe1")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 212.09 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0ec29f5-c68e-4ec2-a2ef-d5eff691cfe1")
+		(property "Reference" "#PWR09"
+			(at 218.44 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f46bb1cf-ad7d-4f49-9c82-70d7d17be392")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0fa4656-5292-4c16-8b79-6432d900e6e8")
+		(property "Reference" "#PWR015"
+			(at 191.77 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4d51cb5-eae0-45d7-8f6a-88ef8632ec88")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 76.2 80.01 0)
 		(unit 1)
@@ -6056,33 +6847,17 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 226.06 97.79 0)
+		(lib_id "power:+3V3")
+		(at 204.47 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bc4706fb-b5eb-430d-9ca9-8c1644965ed3")
-		(property "Reference" "LED15"
-			(at 241.3 91.4714 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 241.3 94.0114 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 226.06 97.79 0)
+		(uuid "b8e52fdd-2638-4a94-b081-a4aa002fe086")
+		(property "Reference" "#PWR024"
+			(at 208.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6090,74 +6865,17 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 226.06 97.79 0)
+		(property "Value" "+3V3"
+			(at 200.66 63.4999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 226.06 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2b8a5b5c-11bd-4153-8371-cea952772c3e")
-		)
-		(pin "2"
-			(uuid "398e845e-ed2c-4893-9920-885531bfd631")
-		)
-		(pin "4"
-			(uuid "5b2345c2-4d2b-4779-bd11-aa5b438b1b86")
-		)
-		(pin "3"
-			(uuid "6521fe60-9eee-49bc-8e53-16d97af117f5")
-		)
-		(instances
-			(project "hackpad-pcb"
-				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 256.54 21.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be0636ff-6a36-4f87-b415-4ca4341a79e7")
-		(property "Reference" "#PWR05"
-			(at 256.54 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 256.54 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 21.59 0)
+			(at 204.47 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6166,7 +6884,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 21.59 0)
+			(at 204.47 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6174,8 +6892,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 256.54 21.59 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 204.47 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6184,54 +6902,45 @@
 			)
 		)
 		(pin "1"
-			(uuid "2343387a-b418-4c00-981f-28088bdf265a")
+			(uuid "eb44fe35-579e-49ac-a6ec-9ef15e699b69")
 		)
 		(instances
-			(project ""
+			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "#PWR05")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 165.1 74.93 0)
+		(lib_id "Device:LED")
+		(at 236.22 76.2 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bf749819-6a29-4364-aa86-e3075d95828b")
-		(property "Reference" "LED9"
-			(at 180.34 68.6114 0)
+		(uuid "b959181e-0a69-45be-9996-cba10b3a0c44")
+		(property "Reference" "D31"
+			(at 237.8075 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 180.34 71.1514 0)
+		(property "Value" "LED"
+			(at 237.8075 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 165.1 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 74.93 0)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 236.22 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6239,8 +6948,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 165.1 74.93 0)
+		(property "Datasheet" "~"
+			(at 236.22 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 236.22 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6249,21 +6967,150 @@
 			)
 		)
 		(pin "1"
-			(uuid "52d49756-7715-441b-afe3-6d5397682a75")
+			(uuid "91682821-b5fc-4827-8155-181708e526de")
 		)
 		(pin "2"
-			(uuid "414fd089-43c9-41e2-8749-c3ea1d7794e9")
-		)
-		(pin "4"
-			(uuid "5c17579b-9310-419a-a48b-9a131626b885")
-		)
-		(pin "3"
-			(uuid "847d7cbc-e329-42b4-8478-2f156732c061")
+			(uuid "2cb76009-840a-46d8-963b-5a1cfdfc1205")
 		)
 		(instances
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED9")
+					(reference "D31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 267.97 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bca031a2-7bf9-4ce6-aa5c-01196d8307b5")
+		(property "Reference" "#PWR029"
+			(at 274.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 271.78 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 267.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 267.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f58f449-bd0f-4f64-ae56-31b9196b8d37")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 208.28 50.8 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd5ac7ff-0bd4-47ef-9a13-778724f494cc")
+		(property "Reference" "D22"
+			(at 209.8675 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 209.8675 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 208.28 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 208.28 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 208.28 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e339204d-ef21-41d3-89f5-c5872c3d4d8d")
+		)
+		(pin "2"
+			(uuid "b5602b23-2b02-4e79-98ec-af076ea2f725")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D22")
 					(unit 1)
 				)
 			)
@@ -6358,32 +7205,35 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 195.58 29.21 0)
+		(lib_id "power:+3V3")
+		(at 260.35 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c6ea24f5-f2f1-4eee-9d8e-dba992d10aec")
-		(property "Reference" "LED2"
-			(at 210.82 22.8914 0)
+		(fields_autoplaced yes)
+		(uuid "c23565d6-43a8-4450-8162-ce8e1383ffe3")
+		(property "Reference" "#PWR020"
+			(at 264.16 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 210.82 25.4314 0)
+		(property "Value" "+3V3"
+			(at 256.54 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 195.58 29.21 0)
+		(property "Footprint" ""
+			(at 260.35 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6392,7 +7242,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 29.21 0)
+			(at 260.35 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6400,8 +7250,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 195.58 29.21 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 260.35 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6410,21 +7260,79 @@
 			)
 		)
 		(pin "1"
-			(uuid "e00b2c6f-970b-4265-acc5-9dce6d5ea7fb")
-		)
-		(pin "2"
-			(uuid "da730d73-19be-4146-9d26-5faec19c9e5d")
-		)
-		(pin "4"
-			(uuid "a0ac6db9-126d-4164-92c1-cd5c20082f77")
-		)
-		(pin "3"
-			(uuid "b029ef40-e0d6-4c4f-b311-2a0e3665c875")
+			(uuid "5628759b-a799-402a-92ca-1baab2f4c6ba")
 		)
 		(instances
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED2")
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 260.35 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3731471-1608-4a70-af37-ccaaab7313ab")
+		(property "Reference" "#PWR028"
+			(at 264.16 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 256.54 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 260.35 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 260.35 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 260.35 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1c949a0-f066-4e54-ac18-74422727a3a5")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -6607,6 +7515,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 181.61 76.2 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce66ef39-9343-4336-9900-56d79b98c023")
+		(property "Reference" "D29"
+			(at 183.1975 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 183.1975 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 181.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 181.61 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f47b615-b25a-476d-b09f-68ce857d8130")
+		)
+		(pin "2"
+			(uuid "84312400-49fd-4202-9d53-47cb5c03f608")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Diode")
 		(at 78.74 127 90)
 		(unit 1)
@@ -6689,228 +7665,6 @@
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
 					(reference "D16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 165.1 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf1f9243-9254-44aa-9186-74093d5aba92")
-		(property "Reference" "LED5"
-			(at 180.34 45.7514 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 180.34 48.2914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 165.1 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 165.1 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "406d5a19-d3ca-4aff-a664-f83b733cb098")
-		)
-		(pin "2"
-			(uuid "679be5c5-6d6b-4449-a955-7c1cb72850a5")
-		)
-		(pin "4"
-			(uuid "efcaa37c-82e3-432f-95f7-c9aa3d47cdf3")
-		)
-		(pin "3"
-			(uuid "ec28fe7f-8409-4677-8464-7da192f34304")
-		)
-		(instances
-			(project "hackpad-pcb"
-				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 226.06 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d2dbb9f8-5963-4e9b-8ea1-20b59d87796b")
-		(property "Reference" "LED7"
-			(at 241.3 45.7514 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 241.3 48.2914 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 226.06 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 226.06 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a02eddad-2070-4207-8b52-a0cc6269f98a")
-		)
-		(pin "2"
-			(uuid "12f4efba-807f-4ff0-b136-effcaeb97b5b")
-		)
-		(pin "4"
-			(uuid "ae50f298-c58c-46dd-bb99-dcd963ad1f2d")
-		)
-		(pin "3"
-			(uuid "d8ec7391-9f5e-4e23-a9a5-1a8142ae35ed")
-		)
-		(instances
-			(project "hackpad-pcb"
-				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 226.06 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3340cf7-b012-4a7f-b9df-4bd2c7334b8f")
-		(property "Reference" "LED11"
-			(at 241.3 68.6114 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 241.3 71.1514 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 226.06 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 226.06 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f7f37aab-0ef9-48a1-9417-c4e3f17584e5")
-		)
-		(pin "2"
-			(uuid "247c3961-e80e-4de5-8ece-bf1e7b8587a4")
-		)
-		(pin "4"
-			(uuid "550c8394-dd80-4b3b-9478-24e0c4fb285f")
-		)
-		(pin "3"
-			(uuid "01b4d498-3dd0-478a-91a6-14adb6c3de10")
-		)
-		(instances
-			(project "hackpad-pcb"
-				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED11")
 					(unit 1)
 				)
 			)
@@ -7021,42 +7775,33 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_marbastlib-mx:MX_SK6812MINI-E")
-		(at 256.54 52.07 0)
+		(lib_id "Device:LED")
+		(at 236.22 50.8 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e6f3af1c-b762-434a-b044-231cf8eb5f62")
-		(property "Reference" "LED8"
-			(at 271.78 45.7514 0)
+		(uuid "ea6e14d9-3dfb-49f8-8cdf-2b949fe5f068")
+		(property "Reference" "D23"
+			(at 237.8075 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MX_SK6812MINI-E"
-			(at 271.78 48.2914 0)
+		(property "Value" "LED"
+			(at 237.8075 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-mx:LED_MX_6028R"
-			(at 256.54 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 256.54 52.07 0)
+		(property "Footprint" "PCM_marbastlib-mx:LED_MX_3mm-ROT"
+			(at 236.22 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7064,8 +7809,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 256.54 52.07 0)
+		(property "Datasheet" "~"
+			(at 236.22 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 236.22 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7074,21 +7828,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "789a3e31-16cf-42ef-90fe-81a24ccc287e")
+			(uuid "f1abbc6a-8374-4fc1-a355-bc04d3db1493")
 		)
 		(pin "2"
-			(uuid "80479889-2b93-4f88-a7fa-573db2536f7f")
-		)
-		(pin "4"
-			(uuid "7d897dfb-499e-48f1-aa93-8e4b24ddf954")
-		)
-		(pin "3"
-			(uuid "87ddffd3-16b4-45cd-b456-106ab535ff6a")
+			(uuid "aed6e2e0-2e19-410d-9293-3112ebc0b420")
 		)
 		(instances
 			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "LED8")
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -7171,17 +7919,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 271.78 59.69 0)
+		(lib_id "power:+3V3")
+		(at 177.8 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "eda184cd-2ba0-49f7-b86f-67bcd8473cbc")
-		(property "Reference" "#PWR010"
-			(at 271.78 66.04 0)
+		(uuid "efdb5e91-5d3a-45c5-8d76-d7120486985f")
+		(property "Reference" "#PWR030"
+			(at 181.61 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7189,16 +7937,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 271.78 64.77 0)
+		(property "Value" "+3V3"
+			(at 173.99 76.1999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 59.69 0)
+			(at 177.8 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7207,7 +7956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 59.69 0)
+			(at 177.8 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7215,8 +7964,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 59.69 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 177.8 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7225,12 +7974,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "400f9540-4057-4350-9317-d016fecac3d0")
+			(uuid "39b3cf68-f6a3-429a-a683-bcf82e1c4f53")
 		)
 		(instances
-			(project ""
+			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "#PWR010")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -7297,6 +8046,73 @@
 			(project ""
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 204.47 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0233c69-cfb5-4d44-aab1-9035962a00d8")
+		(property "Reference" "#PWR08"
+			(at 208.28 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 200.66 38.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 204.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "783cf019-9b3c-46f4-8ab2-0db8d47901e7")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -7546,17 +8362,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 271.78 82.55 0)
+		(lib_id "power:+3V3")
+		(at 232.41 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fbba78d1-102c-49c2-9666-9031c8e9ea3b")
-		(property "Reference" "#PWR011"
-			(at 271.78 88.9 0)
+		(uuid "fadb3a5f-287a-4a46-ba8d-8c974c6abc60")
+		(property "Reference" "#PWR026"
+			(at 236.22 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7564,16 +8380,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 271.78 87.63 0)
+		(property "Value" "+3V3"
+			(at 228.6 63.4999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 271.78 82.55 0)
+			(at 232.41 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7582,7 +8399,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 271.78 82.55 0)
+			(at 232.41 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7590,8 +8407,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 271.78 82.55 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 232.41 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7600,12 +8417,280 @@
 			)
 		)
 		(pin "1"
-			(uuid "7ecdc920-3a76-4503-9f02-b9a4f9c45c35")
+			(uuid "55e76c3b-ef8c-44e5-939c-467efd8ac308")
 		)
 		(instances
-			(project ""
+			(project "hackpad-pcb"
 				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
-					(reference "#PWR011")
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 185.42 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbed235f-ee06-47f3-9ce5-6ed892fc773f")
+		(property "Reference" "#PWR031"
+			(at 191.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 189.23 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 185.42 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "155dd4a4-3025-4ce9-9fb9-554ee57c27db")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 177.8 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc5d63c4-d89a-4aff-b560-463d4bf523cc")
+		(property "Reference" "#PWR022"
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 173.99 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 177.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2766b54-36e5-4f7a-bbe3-8bf43968a894")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe981bd8-ca35-4a9f-bcbc-e3865c98550a")
+		(property "Reference" "#PWR035"
+			(at 246.38 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91b7df3f-650e-4e80-9daa-3b710eef15bf")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 212.09 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffd0698a-42f7-4b5c-87b0-e201e9e30503")
+		(property "Reference" "#PWR017"
+			(at 218.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 50.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 212.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9332add0-d45e-40e1-8cec-ecf421ab36dd")
+		)
+		(instances
+			(project "hackpad-pcb"
+				(path "/7fdcf342-85e2-43bc-9100-2f09a765cb9f"
+					(reference "#PWR017")
 					(unit 1)
 				)
 			)
